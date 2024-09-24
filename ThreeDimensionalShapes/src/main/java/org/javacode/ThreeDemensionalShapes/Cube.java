@@ -14,4 +14,12 @@ public class Cube implements ThreeDimensionalShape {
     public double surfaceArea() {
         return 6 * Math.pow(side, 2);
     }
+
+    @Override
+    public String toString() {
+        return "Cube: " +
+                "side = " + side +
+                ", volume = " + volume() +
+                ", surface area = " + surfaceArea();
+    }
 }

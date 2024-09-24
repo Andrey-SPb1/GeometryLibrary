@@ -15,4 +15,11 @@ public class Sphere implements ThreeDimensionalShape {
         return 4 * Math.PI * Math.pow(radius, 2);
     }
 
+    @Override
+    public String toString() {
+        return "Sphere: " +
+                "radius = " + radius +
+                ", volume = " + volume() +
+                ", surface area = " + surfaceArea();
+    }
 }
