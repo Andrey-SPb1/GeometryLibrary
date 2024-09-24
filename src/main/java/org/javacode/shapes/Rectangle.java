@@ -1,12 +1,21 @@
 package org.javacode.shapes;
 
-public class Rectangle {
+public class Rectangle implements Shape {
 
-    public double getArea(double width, double height) {
-        return width * height;
+    private final double width;
+    private final double length;
+
+
+    public Rectangle(double width, double length) {
+        this.width = width;
+        this.length = length;
     }
 
-    public double getPerimeter(double width, double height) {
-        return (width + height) * 2;
+    public double getArea() {
+        return width * length;
+    }
+
+    public double getPerimeter() {
+        return (width + length) * 2;
     }
 }

@@ -1,12 +1,19 @@
 package org.javacode.shapes;
 
-public class Circle {
+public class Circle implements Shape {
 
-    public double getArea(double r) {
-        return Math.PI * Math.pow(r, 2);
+    private final double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
-    public double getPerimeter(double r) {
-        return Math.PI * r * 2;
+    public double getArea() {
+        return Math.PI * Math.pow(radius, 2);
     }
+
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+
 }
