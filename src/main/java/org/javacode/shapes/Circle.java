@@ -7,6 +7,6 @@ public class Circle {
     }
 
     public double getPerimeter(double r) {
-        return 2 * Math.PI * r;
+        return Math.PI * r * 2;
     }
 }
