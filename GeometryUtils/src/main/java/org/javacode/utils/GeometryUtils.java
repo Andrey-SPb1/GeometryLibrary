@@ -14,4 +14,8 @@ public class GeometryUtils {
         return cm * 10;
     }
 
+    public double convertMmToCm(double mm) {
+        return mm / 10;
+    }
+
 }
